@@ -1,0 +1,9 @@
+﻿#include <iostream>
+using namespace std;
+int main() {
+	float a = 1000.0, b = 0.0001;
+	cout << (pow(a + b, 3) - pow(a, 3)) / (3 * a * pow(b, 2) + pow(b, 3) + 3 * pow(a, 2) * b) << endl;
+	double c = 1000.0, d = 0.0001;
+	cout << (pow(c + d, 3) - pow(c, 3)) / (3 * c * pow(d, 2) + pow(d, 3) + 3 * pow(c, 2) * d) << endl;
+	return 0;
+}
