@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int n = 6, m = 7, r1 = n++ * m;
+	cout << "1) n++*m = " << r1 << " n = " << n << " m = " << m << endl;
+	n = 6, m = 7;
+	bool r2 = n++ < m;
+	cout << "2) n++<m = " << r2 << " n = " << n << " m = " << m << endl;
+	n = 6, m = 7;
+	r2 = m-- > m;
+	cout << "3) m-- >m = " << r2 << " n = " << n << " m = " << m << endl;
+	return 0;
+}
